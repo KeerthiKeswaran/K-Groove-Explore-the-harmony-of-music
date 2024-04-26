@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Grooves</title>
+    <link rel="icon" type="image/x-icon" href="icon2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="Navbar">
+        <div id="titleNav">
+            <h1><span id="titleM">K-</span><span>Grooves</span></h1>
+            <ul id="linkList">
+                <li id="liHome"><a href="#feat">Features</a></li>
+                <li id="liMusic"><a href="#musicSec">Music</a></li>
+                <li id="liContact"><a href="#feat">Features</a></li>
+                <li id="liBlog"><a href="#conta">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="socialNav">
+            <ul id="iconList">
+                <li id="fbIcon"><i class='bx bxl-facebook-circle'></i></li>
+                <li id="instaIcon"><i class='bx bxl-instagram-alt'></i></li>
+                <li id="twitIcon"><i class='bx bxl-twitter'></i></li>
+                <li id="linIcon"><i class='bx bxl-linkedin-square'></i></li>
+                <li id="whatIcon"><i class='bx bxl-whatsapp'></i></li>
+            </ul>
+        </div>
+
+        <div id="downNav">
+            <h1>MUSIC IS LIFE IT SELF</h1>
+            <p>"Harmony in every note, rhythm in every beat, <br>music paints the colors of life's symphony."
+            </p>
+            <button>Download</button>
+        </div>
+    </div>
+
+    <section class="ablFea">
+        <video autoplay muted loop class="video-background">
+            <source src="videoBG.mp4" type="video/mp4">
+        </video>
+        <div id="album">
+            <p>Album</p>
+            <h2>Recent Tour & Projects</h2>
+            <div id="albimg">
+                <div id="imag">
+                    <img src="Albums\album (1).png">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (2).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (3).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (4).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (5).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (6).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (7).jpg">
+                </div>
+                <div id="imag">
+                    <img src="Albums\album (8).avif">
+                </div>
+            </div>
+        </div>
+
+
+        <section class="featureSec" id="feat">
+            <h2 class="advFea">Advance Features</h2>
+            <div id="features">
+                <div class="featureList">
+                    <i class='bx bxs-playlist'></i>
+                    <h2>Make PlayList</h2>
+                    <p>Create and manage your playlists effortlessly. </p>
+                </div>
+                <div class="featureList">
+                    <i class='bx bx-money-withdraw'></i>
+                    <h2>Free Music</h2>
+                    <p>Enjoy unlimited access to free music. </p>
+                </div>
+                <div class="featureList">
+                    <i class='bx bxs-music'></i>
+                    <h2>Play Your Music</h2>
+                    <p>Enjoy seamless playback of your favorite tracks</p>
+                </div>
+                <div class="featureList">
+                    <i class='bx bx-heart-circle'></i>
+                    <h2>Add Your Favorites</h2>
+                    <p>Save and access your favorite songs with a click.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="musicSec">
+        <div class="musicDiv">
+
+            <div class="music">
+                <h3>Jailer</h3>
+                <p>Hukum-Thalaiver Alapara</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo1.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music1.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupJailer()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Beast</h3>
+                <p>Arabic Kuthu</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo2.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music2.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupBeast()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bx-book-open' title="lyricsAI"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Lover</h3>
+                <p>Ezhudha Kadhayo</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo3.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music3.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupLover()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bx-book-open' title="lyricsAI"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Premalu</h3>
+                <p>Welcome to Hyderabad</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo4.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music4.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupPremalu()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bx-book-open' title="lyricsAI"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Dada</h3>
+                <p>Thaayaga Naan</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo5.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music5.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupDada()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bx-book-open' title="lyricsAI"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Jawan</h3>
+                <p>Jawan-Title Track</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo6.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music6.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupJawan()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bx-book-open' title="lyricsAI"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Harleys in Hawaii</h3>
+                <p>Katy Perry</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo7.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music7.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupHarleys()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+
+            <div class="music">
+                <h3>Meet Cute</h3>
+                <p>Ningey Yele Thaarey</p>
+                <div class="imageMusic">
+                    <img class="musicImg" src="MusicLogo\mlogo8.jpg">
+                </div>
+                <div class="AudioMusic">
+                    <audio controls class="audio-player">
+                        <source src="Musics\Music8.mp3" type="audio/mpeg">
+                    </audio>
+                    <i class='bx bxs-microphone-alt' title="Lyrics" onclick="popupMeet()"></i>
+                    <!---<i class='bx bxs-music' title="music"></i>
+                    <i class='bx bx-play-circle' title="play"></i>
+                    <i class='bx bxs-volume-full' title="volume"></i>--->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay"></div>
+    <div id="lyricsBox" class="lyrics-box">
+        <i class='bx bx-x-circle' id="closeBox" onclick="closeBox()"></i>
+        <div class="lyricsImg">
+            <div class="lyricsImage">
+                <img id="lyricsLogo" class="lyricsImg" src="">
+                <h3 id="Composer"> </h3>
+                <h4 id="Singer"></h4>
+            </div>
+            <div class="lyricsContent">
+                <h3 class="lyr">Lyrics</h3>
+                <p id="lyricPara">
+                    
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="footer" id="conta">
+        <div class="creator">
+            <p>a produt by</p>
+            <h3>KeerthiKeswaran</h3>
+            <p>Hope you love it !</p>
+        </div>
+        <div class="downlast">
+            <h3>Download</h3>
+            <a href="#">
+                <p>Windows</p>
+            </a>
+            <a href="#">
+                <p>Mac</p>
+            </a>
+            <a href="#">
+                <p>Linux</p>
+            </a>
+            <a href="#">
+                <p>Android</p>
+            </a>
+            <a href="#">
+                <p>IOS</p>
+            </a>
+        </div>
+        <div class="GoTo">
+            <h3>Go To</h3>
+            <a href="#Navbar">
+                <p>Home</p>
+            </a>
+            <a href="#album">
+                <p>Albums</p>
+            </a>
+            <a href="#feat">
+                <p>Features</p>
+            </a>
+            <a href="#musicSec">
+                <p>Music</p>
+            </a>
+        </div>
+        <div class="cont">
+            <h3>Contact Us</h3>
+            <p>kgroovesupport@gmail.com</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,692 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#Navbar {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bgimgnav.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#titleNav {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#titleNav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#titleNav a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#titleNav a:hover {
+    color: rgb(247, 205, 255);
+    text-decoration: underline;
+}
+
+#titleM {
+    color: white;
+}
+
+#socialNav {
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    left: 0px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+#socialNav i {
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#downNav {
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    margin-top: 70px;
+    padding: 50px;
+    text-align: right;
+}
+
+#downNav h1 {
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+    ;
+}
+
+#downNav p {
+    font-weight: 600px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    text-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+    ;
+}
+
+#downNav button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#downNav button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+}
+
+#socialNav i:hover {
+    transform: scale(1.2);
+}
+
+#album {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 3% 0;
+    color: white;
+}
+
+#album p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#albimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 25%;
+    margin-top: 5px;
+}
+
+#imag {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#imag img {
+    width: 100%;
+    height: 150px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#imag img:hover {
+    transform: scale(1.2);
+}
+
+.featureSec {
+    color: white;
+}
+
+#features {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.featureList {
+    margin: 50px 30px;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgba(229, 140, 244, 0.363);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bgimgnav11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    color: white;
+    transition: 0.3s;
+}
+
+.featureList:hover {
+    transform: scale(1.1);
+}
+
+.featureList i:hover {
+    color: rgb(253, 202, 253);
+}
+
+.featureList i,
+h2,
+p {
+    margin: 10px;
+}
+
+.featureList i {
+    font-size: 50px;
+}
+
+.advFea {
+    text-align: center;
+    font-size: 30px;
+}
+
+.ablFea {
+    position: relative;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+#musicSec {
+    position: relative;
+    padding: 3% 0;
+    margin: auto;
+    width: 100%;
+    background: url(musicBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+#musicSec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.musicDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music {
+    flex-basis: 25%;
+    height: 20rem;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(229, 140, 244, 0.363);
+}
+
+.music h3 {
+    padding-top: 1rem;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.music p {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.imageMusic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageMusic .musicImg {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1rem;
+}
+
+.AudioMusic {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.AudioMusic .bx {
+    font-size: 28px;
+    padding-top: 27px;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    background-color: black;
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: none;
+    position: fixed;
+}
+
+.lyrics-box {
+    background-color: azure;
+    border-radius: 15px;
+    width: 40%;
+    height: 50vh;
+    padding: 30px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    bottom: 20%;
+    z-index: 7;
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(LyricsGIF/JailerGif.gif) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.lyrics-box .bx {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 28px;
+    color: red;
+    cursor: pointer;
+}
+
+.lyricsImg {
+    display: flex;
+}
+
+.lyricsImage img {
+    flex-basis: 25%;
+    margin: 5px;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.637);
+}
+
+.lyricsImage h3,
+h4 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.lyrics-box .lyricsContent {
+    padding: 10px;
+    overflow-y: auto;
+    height: 250px;
+    width: 300px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.749);
+    border-radius: 15px;
+}
+
+.playMusic {
+    animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: small;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: 30vh;
+}
+
+.footer div {
+    height: 100px;
+    flex-basis: 25%;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(247, 205, 255);
+    text-decoration: underline;
+}
+
+
+.audio-player {
+    width: 70%;
+    height: 50px;
+    border-radius: 40px;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 15px;
+    display: flex;
+    font-size: 5px;
+}
+
+.audio-player::-webkit-media-controls-current-time-display,
+.audio-player::-webkit-media-controls-time-remaining-display {
+    font-size: 10px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #ebb5ff;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    #features {
+        display: flex;
+    }
+
+    .featureList {
+        flex-basis: 20%;
+        width: 100px;
+    }
+
+    .featureList h2,
+    p,
+    i {
+        font-size: -40px;
+        margin: 0;
+    }
+
+    #titleNav li {
+        font-size: 8px;
+    }
+
+    #titleNav h1 {
+        position: relative;
+        bottom: 4px;
+        font-size: 25px;
+    }
+
+    #downNav {
+        margin-top: 90px;
+        font-size: -20px;
+    }
+
+    #downNav h1 {
+        font-size: 30px;
+    }
+
+    #downNav p {
+        font-size: 12px;
+        position: relative;
+        left: 20px;
+    }
+
+    .music h3 {
+        font-size: 15px;
+    }
+
+    .music {
+        height: 18rem;
+    }
+    #socialNav i {
+        font-size: 30px;
+        margin-left: 2px;
+    }
+    .lyrics-box .bx {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 25px;
+        color: red;
+        cursor: pointer;
+    }
+    
+    .lyricsImg {
+        display: flex;
+    }
+    
+    .lyricsImage img {
+        flex-basis: 50%;
+        margin: 5px;
+        border-radius: 15px;
+        height: 50px;
+        width: 50px;
+        float: left;
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .lyricsImage h3,
+    h4 {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .lyrics-box .lyricsContent {
+        padding: 10px;
+        overflow-y: auto;
+        height: 250px;
+        width: 300px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.749);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width : 450px) {
+    #features {
+        display: flex;
+        height: 200px;
+    }
+
+    .featureList {
+        flex-basis: 50%;
+        width: 100px;
+        margin: 20px 10px;
+        height: 150px;
+    }
+
+    .featureList h2,
+    p,
+    i {
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    #titleNav li {
+        display: inline-block;
+        margin: 2px;
+    }
+    #titleNav{
+        justify-content: space-between;
+    }
+    #titleNav a {
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+        left: 10px;
+    }
+    #downNav{
+        position: relative;
+        top: 20px;
+        left: 90px;
+    }
+    #titleNav h1 {
+        font-size: 20px;
+    }
+    #downNav h1 {
+        font-size: 20px;
+        position: relative;
+        left: 30px;
+        top: 10px;
+    }
+
+    #downNav p {
+        font-size: 12px;
+    }
+    #album p,h2{
+        font-size: 15px;
+    }
+    .advFea{
+        font-size: 20px;
+    }
+    .musicDiv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .music {
+        flex-basis: 50%;
+        height: 16rem;
+    }
+    .imageMusic .musicImg {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+
+    .lyrics-box .bx {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 25px;
+        color: red;
+        cursor: pointer;
+    }
+    
+    .lyricsImg {
+        display: flex;
+    }
+    
+    .lyricsImage img {
+        flex-basis: 100%;
+        margin: 5px;
+        border-radius: 15px;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        display: inline-block;
+    }
+   
+    .lyricsImage h3{
+        font-size: 12px;
+    }
+    .lyricsImage h4{
+        font-size: 10px;
+    }
+    
+    .lyrics-box .lyricsContent {
+        padding: 10px;
+        overflow-y: auto;
+        height: 250px;
+        width: 400px;
+        position: relative;
+        top: 20px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: 10vh;
+    }
+    .creator{
+        position: relative;
+        left: 10px;
+    }
+    .cont{
+        position: relative;
+        right: 5px;
+    }
+}
