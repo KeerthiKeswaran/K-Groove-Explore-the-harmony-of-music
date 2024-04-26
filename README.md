@@ -1,6 +1,6 @@
 **K-Grooves: A Unique Music Experience🎶**
 
-***Site Link :**  https://keerthikeswaran.github.io/K-Groove-Explore-the-harmony-of-music/
+**Site Link :**  https://keerthikeswaran.github.io/K-Groove-Explore-the-harmony-of-music/
 
 **Overview:**
 K-Grooves is a frontend music website designed to provide users with a unique and immersive music experience. With carefully crafted design elements and interactive features, it aims to engage music enthusiasts and provide them with seamless navigation and enjoyable music listening sessions.
