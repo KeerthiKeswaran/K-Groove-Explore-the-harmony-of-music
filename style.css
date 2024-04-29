@@ -593,7 +593,7 @@ audio::-webkit-media-controls-panel {
     }
     #downNav{
         position: relative;
-        top: 20px;
+        top: 170px;
         left: 90px;
     }
     #titleNav h1 {
@@ -688,5 +688,8 @@ audio::-webkit-media-controls-panel {
     .cont{
         position: relative;
         right: 5px;
+    }
+    #Navbar{
+        height: 70vh;
     }
 }
