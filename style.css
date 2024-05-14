@@ -694,3 +694,11 @@ audio::-webkit-media-controls-panel {
         height: 70vh;
     }
 }
+#copyright{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    padding-top: 180px;
+    left: 10px;
+    margin: 0;
+}
