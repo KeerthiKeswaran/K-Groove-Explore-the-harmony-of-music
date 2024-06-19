@@ -1,38 +1,3 @@
-/*let musicSection = document.getElementById('musicSec');
-let isPlaying = false;
-let currentAudio = null;
-
-musicSection.addEventListener('click', function(event) {
-    let targetedElement = event.target;
-    let parentMusic = targetedElement.closest('.music');
-
-    if (!parentMusic) return; // Exit if the click is not on a music element
-
-    let music = parentMusic.querySelector('.audio');
-    let img = parentMusic.querySelector('.musicImg');
-
-    if (!music || !img) return; // Exit if audio or image not found
-
-    if (currentAudio && currentAudio !== music) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-        isPlaying = false;
-    }
-
-    if (!isPlaying) {
-        music.play();
-        isPlaying = true;
-        targetedElement.classList.replace('bx-play-circle', 'bx-pause');
-        img.classList.add('playMusic');
-    } else {
-        music.pause();
-        isPlaying = false;
-        targetedElement.classList.replace('bx-pause', 'bx-play-circle');
-        img.classList.remove('playMusic');
-    }
-
-    currentAudio = music;
-});*/
 
 const audioPlayers = document.querySelectorAll('.audio-player');
 
@@ -404,6 +369,8 @@ function closeBox() {
     overlay.style.display = "none";
 }
 
-
+var copyright = document.getElementById("copyright")
+var year = new Date().getFullYear();
+copyright.innerHTML ="Copyright &copy; "+year;
 
 
